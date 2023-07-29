@@ -8,6 +8,10 @@ const connectDB = require('./database/mongoose');
 
 const app = express();
 
+app.get('/' , (req, res) => {
+  res.send('hello world')
+})
+
 dotenv.config( { path : '.env'} )
 const PORT = process.env.PORT || 8080
 

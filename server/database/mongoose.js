@@ -9,9 +9,7 @@ const connectDb = async () => {
 
   mongoose
   .connect(
-    `mongodb+srv://${dbUser}:${dbPass}@crud-application.moklujf.mongodb.net/?retryWrites=true&w=majority
-
-    `
+    `mongodb+srv://${dbUser}:${dbPass}@crud-application.moklujf.mongodb.net/?retryWrites=true&w=majority`
   )
   .then(() => {
     console.log(`🟢 Connection established with Crud Application `);
